@@ -3,7 +3,7 @@ import streamlit as st
 
 def show_style():
     st.set_page_config(
-    page_title="CBT Therapy Maigrate")
+    page_title="Eventbuoy Maigrate")
     
     hide_menu_style = """
     <style>
