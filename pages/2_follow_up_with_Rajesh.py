@@ -35,8 +35,8 @@ if 'webbot_id' not in st.session_state:
 
 response = create_conversation(webbot_id=st.session_state['webbot_id'], name="random")
 
-if response is not None:
-    st.session_state['active_conversation_id'] = response.get('id')
+# if response is not None:
+st.session_state['active_conversation_id'] = response.get('id')
 
 conversation = get_conversation(conversation_id=st.session_state['active_conversation_id'])
 conversation_list = [conversation]
